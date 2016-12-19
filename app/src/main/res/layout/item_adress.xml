@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+
+
+                style="@style/content_style"
+                android:layout_marginLeft="32dp"
+                android:text="收货人:"
+                android:textColor="#97989a"/>
+
+            <TextView
+                android:id="@+id/pay_tv_person"
+                android:textColor="#97989a"
+                style="@style/content_style"
+
+                android:text="小华华" />
+
+            <TextView
+                android:textColor="#97989a"
+                android:id="@+id/pay_tv_phone"
+                style="@style/content_style"
+                android:layout_marginLeft="100dp"
+
+                android:text="188888888" />
+
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginLeft="8dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+           android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/adress" />
+
+            <TextView
+                android:paddingBottom="8dp"
+                android:textColor="#565a5b"
+                android:id="@+id/pay_tv_adress"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="收货地址:重庆市重庆市沙坪坝区大学城虎重庆科技学院容园7号"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/right"
+                />
+
+
+        </LinearLayout>
+        <TextView
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+                android:textColor="#f3a80f"
+              android:text="(收货方便时可选择免费代收服务)"
+            />
+        <View
+                android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#f58e8f"/>
+
+
+
+    </LinearLayout>
+
+
+
+    </FrameLayout>

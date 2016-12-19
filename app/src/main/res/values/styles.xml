@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- <item name="colorPrimary">@android:color/transparent</item>
+         <item name="colorPrimaryDark">@android:color/transparent</item>-->
+    </style>
+
+    <style name="NoTitleThemeFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NoTitleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <!--字体大小样式-->
+    <style name="love_title" parent="android:Widget.Holo.Light.TextView">
+
+        <item name="android:background">@drawable/rectangle_4dp11</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#535151</item>
+    </style>
+
+    <!--字体大小样式-->
+    <style name="Text_title" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <!--搜索分类字体大小样式-->
+    <style name="Search_title" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">22dp</item>
+        <!--<item name="android:background">@color/search_text_selector</item>-->
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!--首页LinearLayoutTextViewYY-->
+    <style name="LinearLayoutTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 标题文本的样式 -->
+    <style name="TitleText" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/txt_title</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 副文本的样式 -->
+    <style name="SubTitleText" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/txt_small</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--搜索页面商品展示样式-->
+    <style name="Search_Show_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#f00</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="myDialogTheme2" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="produclist_right">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/drawerlayout_text_selector</item>
+        <item name="android:background">@drawable/slidingmenu_selector</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+</resources>

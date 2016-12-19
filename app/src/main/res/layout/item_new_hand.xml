@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_new_hand_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:text="1. 问:在这里购物能保证我的信息安全吗?"
+        android:textColor="#d000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_marginLeft="240dp"
+        android:id="@+id/tv_new_hand_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        android:text="afdskljadskljfklj"
+        android:textColor="#a000"
+        android:textSize="14sp"/>
+
+</LinearLayout>

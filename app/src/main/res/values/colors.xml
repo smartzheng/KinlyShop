@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="drawerlayoutcolor">#ffffff</color>
+
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark2">#00ABCE</color>
+    <!--搜索详情selector-->
+    <color name="colorSearch">#252424</color>
+    <color name="colorSearch1">#837e7e</color>
+    <!--标题字体颜色和富文本字体颜色-->
+    <color name="txt_title">#ff333333</color>
+    <color name="txt_small">#ff7a7a7a</color>
+    <!--   删除浏览记录selector-->
+    <color name="search_red">#ff0000</color>
+    <color name="search_white">#ffffff</color>
+    <color name="payment_bullbule">#61c0f4</color>
+    <color name="payment_bule">#00ABCE</color>
+
+    <color name="tv_blue">#00ABCE</color>
+    <color name="tv_gray">#99000000</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="list_write">#ffffff</color>
+    <color name="list_duck">#f5f5f5</color>
+
+    <color name="search_gray">#aaa</color>
+
+    <color name="image_theme">#EE000000</color>
+</resources>

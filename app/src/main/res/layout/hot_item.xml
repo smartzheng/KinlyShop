@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/list_item_bg_normal"
+              android:orientation="horizontal"
+              android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/v_panic_iicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_loader_failure"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp">
+
+        <TextView
+            android:id="@+id/tv_panic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="奶茶我只要优乐美"
+            android:textColor="#99000000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_marginBottom="7dp"
+            android:id="@+id/tv_panic_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_panic_price"
+            android:layout_marginLeft="8dp"
+            android:text="优惠价格100"
+            android:textColor="#99000000"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_panic_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="价格100"
+            android:textColor="#f00"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/chushou"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/my_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="已经出售"
+            android:textColor="#f00"
+            android:textSize="9sp"/>
+
+        <ProgressBar
+            android:id="@+id/my_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:max="100"
+            android:progress="40"
+            android:progressDrawable="@drawable/progress_color"
+            android:secondaryProgress="50"/>
+
+        <TextView
+            android:id="@+id/hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/my_progress"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/tv_fh_bg"
+            android:drawableRight="@drawable/arrow_right20"
+            android:padding="3dp"
+            android:paddingLeft="2dp"
+            android:text="马上抢购"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+</LinearLayout>

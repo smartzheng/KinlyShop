@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.taolu.shop.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000" />
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/menu_home_selector"
+            android:text="首页"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_search"
+            style="@style/BottomTabStyle"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/menu_search_selector"
+            android:text="搜索"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_brand"
+            style="@style/BottomTabStyle"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/menu_category_selector"
+            android:text="分类"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/BottomTabStyle"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/menu_cart_selector"
+            android:text="购物车"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/BottomTabStyle"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/menu_me_selector"
+            android:text="个人中心"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="12sp" />
+    </RadioGroup>
+</LinearLayout>

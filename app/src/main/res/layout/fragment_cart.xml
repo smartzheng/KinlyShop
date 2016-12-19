@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taolu.shop.fragment.CartFragment">
+
+    <include layout="@layout/item_cart_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000" />
+
+    <RelativeLayout
+        android:id="@+id/fl_cart_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/loading"/>
+        <include layout="@layout/item_cart_nocommodity" />
+
+        <ListView
+            android:id="@+id/cart_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:dividerHeight="0dp"
+            android:divider="#22000000" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/item_cart_pay" />
+
+</LinearLayout>

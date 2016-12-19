@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="190dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/iv_search_foods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/food"/>
+
+    <TextView
+        android:id="@+id/tv_serach_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="5dp"
+        android:padding="3dp"
+        android:text="小苹果"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv_search_buyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_dailog_shape1"
+            android:padding="3dp"
+            android:text="趣金币抵2%"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_dailog_shape1"
+            android:padding="3dp"
+            android:text="免运费"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="¥"
+            android:textColor="#f00"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_serach_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="599"
+            android:textColor="#f00"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_serach_marketPrices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_dailog_shape2"
+            android:padding="3dp"
+            android:text="599"
+            android:textColor="#6e6b6b"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/search_omit"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+
+        <TextView
+            android:id="@+id/tv_search_saless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="7523笔"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_haoping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="好评"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+</LinearLayout>

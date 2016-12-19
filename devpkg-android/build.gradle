@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 16
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.1'
+    //    compile 'com.mcxiaoke.volley:library:1.0.19'
+    //    compile 'com.google.code.gson:gson:2.5'
+    compile files('lib/gson-2.5.jar')
+    compile files('lib/volley-6.0.jar')
+}

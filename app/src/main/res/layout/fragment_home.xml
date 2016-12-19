@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#00ABCE"
+        >
+
+        <ImageView
+
+            android:id="@+id/home_title_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/home_title_hot_big"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/home_title_hot"
+            android:text="HotShop"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/home_title_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/home_title_message"
+            android:clickable="true"
+            android:src="@drawable/home_search35"/>
+
+        <ImageView
+            android:id="@+id/home_title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/home_message35"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/home_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"/>
+
+                <LinearLayout
+                    android:id="@+id/home_linerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_viewpager"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg_normal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_home_time"
+                    style="@style/LinearLayoutTextView"
+                    android:drawableTop="@drawable/home_classify_01"
+
+                    android:text="限时抢购"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_home_sales"
+                    style="@style/LinearLayoutTextView"
+                    android:drawableTop="@drawable/home_classify_02"
+                    android:text="促销快报"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_home_xinpin"
+                    style="@style/LinearLayoutTextView"
+                    android:drawableTop="@drawable/home_classify_03"
+                    android:text="新品上架"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_home_hot"
+                    style="@style/LinearLayoutTextView"
+                    android:drawableTop="@drawable/home_classify_04"
+                    android:text="热门单品"/>
+
+                <TextView
+                    android:id="@+id/tv_home_recommend"
+                    style="@style/LinearLayoutTextView"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/home_classify_05"
+                    android:text="推荐品牌"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/list_item_bg_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="#00ABCE"
+                    android:drawableRight="@drawable/arrow_right20"
+                    android:gravity="center_vertical"
+                    android:text="套路快报"
+                    android:textColor="#fff"
+                    android:textSize="12sp"/>
+
+                <com.taolu.shop.view.VerticalViewPager
+                    android:id="@+id/verticalViewPager"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/list_item_bg_normal"
+             android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/home_time_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableLeft="@drawable/zhengdian"
+                    android:drawablePadding="5dp"
+                   android:gravity="center"
+                    android:textColor="#f00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                  android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/simill2"
+                    android:text="激情尽在套路组"
+                    android:textColor="#00ABCE"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+       android:scaleType="fitXY"
+        android:src="@drawable/homepage"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

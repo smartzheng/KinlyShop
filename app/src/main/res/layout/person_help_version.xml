@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_person_help_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/person_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="首页"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+    <LinearLayout
+        android:id="@+id/ll_person_help_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/person_help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="帮助"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+    <LinearLayout
+        android:id="@+id/ll_person_help_guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/person_guanyu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="关于"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ABCE"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_person_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/me_setting"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/ibt_person_version_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/me_more"
+            android:paddingLeft="2dp"/>
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--添加视差特效-->
+            <LinearLayout
+                android:id="@+id/ll_person_login"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#00ABCE"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_person_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person_touxiang"/>
+
+                <TextView
+                    android:id="@+id/tv_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="登陆/注册"
+                    android:textColor="#fff"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_person_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/personal_jifen"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/me_zhuanshi"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#22000000"/>
+
+                    <TextView
+                        android:id="@+id/tv_person_jifen"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1150"
+                        android:textColor="#88000000"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/list_item_bg_normal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:id="@+id/fl_person_myOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_person_wddd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/me_dingdan"
+                        android:text="我的订单"
+                        android:textColor="#707070"/>
+
+                    <TextView
+                        android:id="@+id/tv_person_order"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="19dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/round_num"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#ffffff"
+                        android:textSize="7sp"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_person_addrs_manager"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/me_dizhi"
+                        android:text="地址管理"
+                        android:textColor="#707070"/>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/me_youhuiquan"
+                        android:text="优惠券"
+                        android:textColor="#707070"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_person_product_collect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/me_shoucang"
+                        android:text="收藏"
+                        android:textColor="#707070"/>
+
+                    <TextView
+                        android:id="@+id/tv_person_shoucang"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="19dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/round_num"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#ffffff"
+                        android:textSize="7sp"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:clickable="true"
+                android:drawableRight="@drawable/cart_card1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="我的卡券包"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_list_item"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:text="必备工具"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:drawableRight="@drawable/person_more"
+                        android:gravity="center_vertical"
+                        android:text="更多"/>
+                </RelativeLayout>
+                <com.taolu.shop.view.droggridview.depend.DragGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f0f0f0"
+                    android:numColumns="4"
+                    android:verticalSpacing="0.5dp"
+                    android:horizontalSpacing="0.5dp">
+
+                </com.taolu.shop.view.droggridview.depend.DragGridView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

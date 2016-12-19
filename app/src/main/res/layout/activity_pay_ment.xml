@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pay_mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00ABCE"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:id="@+id/pay_tv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/back"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付中心"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/Pay_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_bg_pressed"
+            android:dividerHeight="0dp" />
+
+        <Button
+            android:id="@+id/pay_bt_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ABCE"
+            android:text="点击支付"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/sucess_loading"
+
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/nowife" />
+
+        <TextView
+            android:id="@+id/pay_tv_loading"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:text="获取数据,请稍等..."
+            android:textColor="#8888"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

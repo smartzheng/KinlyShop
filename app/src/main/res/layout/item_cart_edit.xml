@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/iv_line_bg">
+            <ImageView
+                android:id="@+id/bianji_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search_instance"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_bianji_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奶茶,我只要优乐美"
+                android:textColor="#BB000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/bianji_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选:颜色:黑色,尺寸:M"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#BB000000"
+            android:paddingLeft="10dp"
+           android:textSize="18sp"
+            android:text="商品数量"/>
+
+        <ImageButton
+            android:id="@+id/bianji_sub"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cart_bianji_sub"
+            />
+
+        <TextView
+            android:id="@+id/tv_bianji_num"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_cart_no_pressed"
+            android:text="2"/>
+
+        <ImageButton
+            android:id="@+id/bianji_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cart_bianji_add"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cart_bianji_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:background="#00ABCE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="确定"/>
+    </LinearLayout>
+
+
+</LinearLayout>

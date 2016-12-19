@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#00ABCE"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_person_setting_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/back35"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#22000000"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_person_mana_touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="头像"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_person_mana_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/login_touxiang2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_person_mana_head"
+            android:src="@drawable/person_more"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_person_mana_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal"
+        android:padding="12dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="用户名"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/person_setting_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="yangding@qq.com"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_person_mana_alias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal"
+        android:padding="12dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="昵称"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:drawableRight="@drawable/person_more"
+            android:text="隔扣死羊羊"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_person_mana_sexs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal"
+        android:padding="12dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="性别"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:drawableRight="@drawable/person_more"
+            android:text="男"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_person_mana_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal"
+        android:padding="12dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="出生日期"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:drawableRight="@drawable/person_more"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_person_setting_exit"
+        android:textSize="18dp"
+        android:textColor="#cfff"
+        android:text="退出当前账号"
+        android:background="#00ABCE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

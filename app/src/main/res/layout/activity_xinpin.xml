@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:pla="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.taolu.shop.activity.XinpinActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#00ABCE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/home_title_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_4dp11"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/et_search_datatt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="夏季外套"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/im_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xiangji35" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/home_title_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/home_title_message"
+            android:src="@drawable/home_search35" />
+
+    </LinearLayout>
+
+    <include layout="@layout/item_search_title"/>
+
+    <com.huewu.pla.lib.MultiColumnListView
+        android:id="@+id/sales_xinpin"
+        pla:plaColumnNumber="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:paddingLeft="6dp"
+
+    >
+
+    <LinearLayout
+        android:background="@drawable/list_item_bg_pressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称:"
+                android:textSize="16sp"
+                android:textColor="#444547"
+                />
+            <TextView
+                android:id="@+id/com_tv_productname"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#444547"
+                android:text="新款爆料内衣"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/com_tv_productcolor"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色:红色"
+                android:textSize="16sp"
+                android:textColor="#d5d5d5"
+                />
+            <TextView
+                android:id="@+id/com_tv_productsize"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#707475"
+                android:text="尺码:120"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/com_tv_productnum"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量:1"
+                android:textSize="16sp"
+                android:textColor="#f4a620"
+                />
+            <TextView
+                android:id="@+id/com_tv_productprivice"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#f4a620"
+                android:text="价格128.00"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

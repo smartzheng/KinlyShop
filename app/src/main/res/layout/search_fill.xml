@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/frame_data"
+              android:layout_width="match_parent"
+              android:layout_height="135dp"
+              android:layout_margin="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:background="@drawable/tv_gray_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="时尚冬装"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:background="@drawable/tv_gray_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="秋装新品"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:background="@drawable/tv_gray_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="潮流修身风衣"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/tv_gray_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="少年锦时"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

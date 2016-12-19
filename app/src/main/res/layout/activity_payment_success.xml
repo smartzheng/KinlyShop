@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.taolu.shop.activity.PaymentSuccess">
+    <TextView
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:background="#00ABCE"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+           android:text="提交成功"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        />
+    <com.taolu.shop.view.FocusedTextView
+                 android:id="@+id/success_foces_info"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#00ABCE"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:text="您的订单已提交,我们会尽快安排发货!"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        />
+    <LinearLayout
+
+        android:background="@drawable/round_shape"
+        android:layout_marginTop="20dp"
+
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+             android:text="你的订单号:10326861529"
+            android:textSize="14sp"
+            />
+        <TextView
+
+            android:id="@+id/sucess_productsum"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="购买件数:"
+            android:textSize="14sp"
+            />
+        <TextView
+
+            android:id="@+id/sucess_momey"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="应付金额:"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/sucess_style"
+
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="支付方式:"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/sucess_bt_gobuy"
+
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+              android:text="返回"
+            android:textSize="16sp"
+            android:background="@drawable/btn_round_shape"
+            />
+
+        <Button
+            android:id="@+id/sucess_bt_obser"
+
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="查看订单"
+            android:textSize="16sp"
+            android:background="@drawable/btn_round_shape"
+            />
+
+        <TextView
+
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+              android:text="如有疑问,你可以拨打咨询电话 "
+            />
+
+
+        <TextView
+
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
+            android:text="400-880_6688"/>
+
+
+
+
+
+
+
+</LinearLayout>

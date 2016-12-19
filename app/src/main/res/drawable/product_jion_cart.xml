@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--设置渐变色-->
+    <gradient
+        android:startColor="#EE9A00"
+        android:endColor="#EE7600"
+        />
+
+
+</shape>

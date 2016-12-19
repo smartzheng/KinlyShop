@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#00ABCE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/ib_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back35" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_4dp11"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/et_search_datatt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="三鹿奶粉"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/ib_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/ib_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filter" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_gravity="end">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="品牌："
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_gravity="center"
+                android:text="爱家"
+                android:checked="true"
+                style="@style/produclist_right"
+                />
+            <RadioButton
+                android:id="@+id/rb2"
+
+                android:text="咪咪"
+                style="@style/produclist_right"/>
+            <RadioButton
+                android:id="@+id/rb3"
+                android:text="防辐射"
+                style="@style/produclist_right"/>
+            <RadioButton
+                android:id="@+id/rb4"
+                android:text="枕工坊"
+                style="@style/produclist_right"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="价格："
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="75dp"
+                android:layout_gravity="center"
+                android:text="100-299"
+                style="@style/produclist_right"
+                />
+            <RadioButton
+
+                android:id="@+id/rb6"
+                android:checked="true"
+                android:layout_width="75dp"
+                android:text="300-599"
+                style="@style/produclist_right"/>
+            <RadioButton
+                android:id="@+id/rb7"
+                android:text="600-799"
+                android:layout_width="75dp"
+                style="@style/produclist_right"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="颜色："
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/rb8"
+                android:layout_gravity="center"
+                android:text="红色"
+                android:checked="true"
+                style="@style/produclist_right"
+                />
+            <RadioButton
+                android:id="@+id/rb9"
+                android:text="粉色"
+                style="@style/produclist_right"/>
+            <RadioButton
+                android:id="@+id/rb10"
+                android:text="黑色"
+                style="@style/produclist_right"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <RadioGroup
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="确定"
+                android:checked="true"
+                style="@style/produclist_right"/>
+            <RadioButton
+                android:text="取消"
+                android:id="@+id/rb_bt1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                style="@style/produclist_right"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

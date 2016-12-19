@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+    <TextView
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/pay_youhui"
+        android:background="#f28e8c"
+        android:textColor="#45504f"
+        android:gravity="center_vertical"
+        android:id="@+id/pay_tv_prefareinfo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:text="你已享受到以下优惠"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/pay_tv_prefareprivce"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#99ff0000"
+        android:textSize="16dp"
+        android:text="可以享受到的优惠活动信息(现金优惠)" />
+    </LinearLayout>
+
+</FrameLayout>

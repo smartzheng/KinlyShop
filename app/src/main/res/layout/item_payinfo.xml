@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/list_item_bg_pressed"
+
+
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+        <TextView
+                  android:paddingLeft="6dp"
+            android:background="#ffffff"
+            android:textColor="#4b4f50"
+            android:gravity="center_vertical"
+          android:drawablePadding="6dp"
+            android:text="趣趣多购物休闲馆KHY"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+              android:drawableLeft="@drawable/pay_tao"
+            />
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+           android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pay_Rb_itempay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/pay_iv_image"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pay_tv_descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="天天特价冬季羽绒服.... "
+                android:textColor="#444547"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pay_tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="颜色:黑色,尺码:XL "
+                android:textColor="#d5d5d5"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="发货时间:\t24小时内发货"
+                android:textColor="#f4a620"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pay_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="价格:180 "
+                    android:textColor="#fb7d39"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/pay_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="6dp"
+                    android:text="数量X "
+                    android:textColor="#444547"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

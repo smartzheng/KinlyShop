@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9900ABCE"
+    >
+    <TextView
+        android:id="@+id/pop_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:text="你确定要取消该订单吗?"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/pop_yes"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+             android:text="确定"
+            android:textSize="18sp"
+            android:background="@drawable/btn_selector"
+            />
+        <Button
+            android:id="@+id/pop_no"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="18sp"
+            android:background="@drawable/btn_selector"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

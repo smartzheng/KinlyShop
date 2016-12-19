@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" filepath="$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KinlyShop.iml" filepath="$PROJECT_DIR$/KinlyShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Loading_library/Loading_library.iml" filepath="$PROJECT_DIR$/Loading_library/Loading_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PinterestLikeAdapterViewlibrary/PinterestLikeAdapterViewlibrary.iml" filepath="$PROJECT_DIR$/PinterestLikeAdapterViewlibrary/PinterestLikeAdapterViewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/devpkg-android/devpkg-android.iml" filepath="$PROJECT_DIR$/devpkg-android/devpkg-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guideview/guideview.iml" filepath="$PROJECT_DIR$/guideview/guideview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoViewlibrary/photoViewlibrary.iml" filepath="$PROJECT_DIR$/photoViewlibrary/photoViewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefresh/pullToRefresh.iml" filepath="$PROJECT_DIR$/pullToRefresh/pullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rbcqtapp/rbcqtapp.iml" filepath="$PROJECT_DIR$/rbcqtapp/rbcqtapp.iml" />
+    </modules>
+  </component>
+</project>

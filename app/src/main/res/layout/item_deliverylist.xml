@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingBottom="6dp"
+
+         android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        android:paddingTop="6dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paytrans"
+            />
+        <TextView
+
+            android:textColor="#4d5253"
+         android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="16sp"
+            android:text="送货方式:"
+        />
+        <TextView
+
+            android:textColor="#4d5253"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/pay_tv_transtaly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="周末节假日"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

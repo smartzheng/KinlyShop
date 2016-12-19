@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_bg_normal"
+    android:padding="10dp"
+    >
+
+
+    <CheckBox
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/cart_checkBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@null"
+        android:background="@drawable/check_box_selector"
+        android:layout_gravity="center_vertical" />
+
+
+    <ImageView
+        android:id="@+id/iv_cart_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@drawable/search_instance" />
+
+    <!--购物车商品的显示和编辑界面-->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        >
+       <!-- 购物车商品信息显示-->
+        <LinearLayout
+            android:id="@+id/ll_cart_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_cart_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雷神笔记本,配置牛逼,性能强悍,各种牛逼,价格便宜"
+                android:textColor="#cc000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cart_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:textColor="#88000000"
+                android:text="颜色:黑色,套餐二,数量:1" />
+
+            <TextView
+                android:id="@+id/tv_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="￥6999"
+                android:textColor="#ff3300" />
+        </LinearLayout>
+        <!--商品编辑的布局-->
+        <LinearLayout
+            android:id="@+id/ll_cart_bianji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cart_sub"
+                    android:clickable="true"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cart_number"
+                    android:textColor="#88000000"
+                    android:gravity="center"
+                    android:text="—" />
+
+                <TextView
+                    android:id="@+id/tv_cart_number"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cart_number"
+                    android:gravity="center"
+                    android:textColor="#88000000"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/tv_cart_add"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_cart_number"
+                    android:gravity="center"
+                    android:textColor="#88000000"
+                    android:text="＋" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_cart_edit_msg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="#88000000"
+                    android:text="颜色:黑色,套餐二,数量:1" />
+
+                <ImageButton
+                    android:id="@+id/ib_cart_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cart_arrow_down"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/list_item_bg_normal"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/v_panic_iicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xinpinshangshi" />
+
+            <TextView
+                android:id="@+id/product_biaoqian"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/product_xiangqing"
+                android:gravity="center"
+                android:text="新品上市 震撼来袭"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_panic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="奶茶我只要优乐美"
+                android:textColor="#aa000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_panic_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:text="￥299"
+                android:textColor="#FF4500"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_panic_price">
+
+                <TextView
+                    android:id="@+id/tv_panic_marketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:text="￥599"
+                    android:textColor="#88000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="45dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#77000000" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/product_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/xinpin_more25" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/product_more"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/baoyou2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

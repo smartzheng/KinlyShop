@@ -1,0 +1,16 @@
+
+    <TextView
+        android:lines="2"
+        android:drawableLeft="@drawable/music"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:layout_marginLeft="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textpager"
+        android:background="#00ABCE"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:text="hehe"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
